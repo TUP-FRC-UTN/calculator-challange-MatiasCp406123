@@ -1,0 +1,4 @@
+<app-calculadora-view [resutado]="resultado" 
+(result)="numero1 = $event" (result2)="numero2 = $event" (opera)="ope=$event" ></app-calculadora-view>
+<app-calculadora-service [number1]="numero1"
+[number2]="numero2" [operacion]="ope" (res)="reesultado($event)"></app-calculadora-service>
